@@ -1,0 +1,13 @@
+{
+    "name": "Experimental ticker",
+    "version": "1",
+    "manifest_version": 2,
+    "content_scripts": [{
+        "js": ["contentscript.js"],
+        "matches": ["http://*/*",
+         "https://*/*"]
+    }],
+    "web_accessible_resources": [
+        "infobar.html"
+    ]
+}
