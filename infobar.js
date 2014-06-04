@@ -12,4 +12,5 @@ if (matches) {
   var domcount = document.querySelector('#matches');
   domcount.innerText = count;
   domcount.innerText.color = white;
+  
 }
