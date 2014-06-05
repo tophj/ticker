@@ -69,3 +69,77 @@ document.body.style = bodyStyle;
 
 
 // });
+
+
+
+var frame = document.createElement('iframe');
+
+frame.setAttribute('width', 0);
+frame.setAttribute('height', 0);
+
+//frame.setAttribute('width', '300px');
+//frame.setAttribute('height', '200px');
+
+
+frame.setAttribute('src', 'http://www.gosugamers.net/dota2/gosubet');
+frame.setAttribute('name', 'hiddenIframe');
+
+
+
+
+$(function getMatches(){
+
+
+	var boxOfMatchData = $('#iFrame');
+	//$('#box');
+
+	var liveMatches = $(boxOfMatchData[0]).find("td");
+	alert(boxOfMatchData.length);
+
+
+	for(var i = 0; i < liveMatches.length;i++){
+
+		var spans = $(liveMatches[i]).find("span");
+
+		var spanName = $(spans).attr('class');
+
+
+		if(spanName === 'opp opp1'){
+
+			var opp1Name = $(spanName).find('span');
+			alert(opp1Name[0].innerHTML);
+
+
+		}
+
+		//var team1 = $(span[1])
+
+
+		
+	}
+
+
+
+});
+
+
+
+
+
+
+
+
+	//document.documentElement.appendChild(frame);
+
+
+
+
+
+
+
+
+
+
+
+
+
